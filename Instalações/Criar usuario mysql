@@ -1,0 +1,7 @@
+criar usuário inicial para mysql
+
+sudo mysql -u root -p
+
+CREATE USER 'novousuario'@'localhost' IDENTIFIED BY 'minhasenha';
+
+GRANT ALL PRIVILEGES ON * . * TO 'novousuario'@'localhost';

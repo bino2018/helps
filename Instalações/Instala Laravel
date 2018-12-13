@@ -1,0 +1,25 @@
+Instalação do laravel
+
+Instalar extensões
+	sudo apt install php7.2-mbstring
+	sudo apt install php-xml
+	sudo apt install php7.2-zip
+	sudo apt install curl
+
+Composer
+
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+
+sudo chown -R $USER ~/.composer/ #muda as permissões para rodar composer sem sudo
+
+inicia projeto em laravel
+composer create-project --prefer-dist laravel/laravel project-name
+
+composer global require "laravel/installer" #baixar instalado
+
+echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+
+echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' >>  ~/.zshrc
+source ~/.zshrc
+

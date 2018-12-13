@@ -1,0 +1,36 @@
+
+Atualizar tudo
+	sudo apt update
+	sudo apt upgrade
+	sudo apt dist-upgrade
+
+Apache
+	sudo apt install apache2
+	sudo systemctl status apache2 #para conferir o status
+	sudo systemctl start apache2 #caso o status seja inativo
+	sudo systemctl enabled apache2 #seta para iniciar com o s.o
+	apache2 -v #ver a versão
+
+Extensão curl	
+	sudo apt install curl
+	curl http://icanhazip.com
+
+Criar usuario apache
+	sudo chown www-data /var/www/html/ -R
+
+Maria Db
+	sudo apt-get install mariadb-server mariadb-client
+	systemctl status mysql #verifica se está iniciado
+	sudo systemctl start mysql # se não estiver iniciado inicia
+	sudo systemctl enable mysql #ativa o mysql junto com inicio do s.o
+	sudo mysql_secure_installation #script de segurança pós instalaçao
+
+PHP 7
+sudo apt install php7.2-fpm php7.2-mysql php7.2-common php7.2-gd php7.2-json php7.2-cli php7.2-curl libapache2-mod-php7.2
+
+sudo a2enmod php7.2
+
+sudo systemctl restart apache2
+
+
+
