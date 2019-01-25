@@ -1,0 +1,38 @@
+
+INSTALANDO REDIS
+
+REFERENCIA
+https://www.youtube.com/watch?v=gNPgaBugCWk
+
+1 - ATUALIZE SEU SO
+sudo apt update
+
+2 - RODE O COMANDO ABAIXO
+sudo apt install build-essential tcl
+
+3 - EM QUALQUER PASTA QUE VOCÊ ESTIVER, RODE
+cd
+
+4 - CRIE UMA PASTA CHAMADA redis
+mkdir redis
+
+5 - ENTRE NA PASTA redis
+cd redis
+
+6 - BAIXE O PACOTE PARA INSTALAÇÃO RODANDO (para garantir rode uma linha por vez, e também confira se a versão mais atualizada é a que está abaixo)
+
+wget http://download.redis.io/releases/redis-5.0.3.tar.gz
+tar xzf redis-5.0.3.tar.gz
+cd redis-5.0.3
+make
+
+5 - RODE O COMANDO "make test" EM BUSCA DE POSSÍVEIS ERROS
+
+6 - ESTANDO NA PASTA redis/redis-5.0.3 RODE O COMANDO
+sudo make install
+
+7 - PARA INICIAR O SERVIDOR REDIS, ESTANDO NA PASTA redis/redis-5.0.3 (lembre da sua pasta de instalação) você deve rodar
+redis-server
+
+8 - PARA INCIAR O CLIENT SERVER RODE
+redis-cli
