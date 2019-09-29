@@ -22,16 +22,16 @@ cd redis
 6 - BAIXE O PACOTE PARA INSTALAÇÃO RODANDO (para garantir rode uma linha por vez, e também confira se a versão mais atualizada é a que está abaixo)
 
 wget http://download.redis.io/releases/redis-5.0.6.tar.gz
-tar xzf redis-5.0.3.tar.gz
-cd redis-5.0.3
+tar xzf redis-5.0.6.tar.gz
+cd redis-5.0.6
 make
 
 5 - RODE O COMANDO "make test" EM BUSCA DE POSSÍVEIS ERROS
 
-6 - ESTANDO NA PASTA redis/redis-5.0.3 RODE O COMANDO
+6 - ESTANDO NA PASTA redis/redis-5.0.6 RODE O COMANDO
 sudo make install
 
-7 - PARA INICIAR O SERVIDOR REDIS, ESTANDO NA PASTA redis/redis-5.0.3 (lembre da sua pasta de instalação) você deve rodar
+7 - PARA INICIAR O SERVIDOR REDIS, ESTANDO NA PASTA redis/redis-5.0.6 (lembre da sua pasta de instalação) você deve rodar
 redis-server
 
 8 - PARA INCIAR O CLIENT SERVER RODE
